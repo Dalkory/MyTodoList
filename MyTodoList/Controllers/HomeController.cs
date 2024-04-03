@@ -107,5 +107,12 @@ namespace MyTodoList.Controllers
                 .ToListAsync();
 
         }
+
+        [AllowAnonymous]
+        [Route("/NotFound")]
+        public IActionResult PageNotFound()
+        {
+            return View();
+        }
     }
 }
